@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<WWX.ModName>Winston Waves Xenotypes</WWX.ModName>
+
+	<WWX.TabColonists>Colonist xenotypes</WWX.TabColonists>
+	<WWX.TabSanguophages>Sanguophage xenotypes</WWX.TabSanguophages>
+
+	<WWX.ColonistEnable>Roll join rewards from my xenotype list</WWX.ColonistEnable>
+	<WWX.ColonistEnableTip>The "Random colonist joins" rewards are hardcoded to baseliners. With this on they roll from the list below instead. Turn it off to leave Winston Waves' reward pawns alone.</WWX.ColonistEnableTip>
+	<WWX.IncludeHemogen>Include hemogen xenotypes</WWX.IncludeHemogen>
+	<WWX.IncludeHemogenTip>Off by default, so sanguophages and anything else that runs on hemogen stay exclusive to the sanguophage reward - the way Winston Waves had it. Turn this on to let them turn up as ordinary colonists too.</WWX.IncludeHemogenTip>
+	<WWX.NoneSelectedColonists>Nothing selected - join rewards will keep giving baseliners.</WWX.NoneSelectedColonists>
+	<WWX.NonCombatantNote>Xenotypes that cannot be generated as combatants, such as highmates, are not listed - Winston Waves only hands out pawns capable of violence.</WWX.NonCombatantNote>
+
+	<WWX.SanguophageEnable>Roll sanguophage rewards from my xenotype list</WWX.SanguophageEnable>
+	<WWX.SanguophageEnableTip>Winston Waves' sanguophage rewards are locked to vanilla's sanguophage plus three from Vanilla Races Expanded. With this on they roll from every hemogen xenotype you have loaded instead.</WWX.SanguophageEnableTip>
+	<WWX.SanguophageExplain>Every xenotype below carries a gene that runs on hemogen. Tick nothing to use all of them.</WWX.SanguophageExplain>
+	<WWX.NoneSelectedSanguophages>Nothing selected - every hemogen xenotype is used.</WWX.NoneSelectedSanguophages>
+
+	<WWX.SelectAll>Select all</WWX.SelectAll>
+	<WWX.ClearAll>Clear all</WWX.ClearAll>
+	<WWX.SelectedCount>{0} of {1} xenotypes selected</WWX.SelectedCount>
+	<WWX.NoCandidates>No xenotypes here. Add some xenotype mods, or tick "Include hemogen xenotypes" on the colonist tab.</WWX.NoCandidates>
+	<WWX.SearchTip>Filter the list by name.</WWX.SearchTip>
+</LanguageData>

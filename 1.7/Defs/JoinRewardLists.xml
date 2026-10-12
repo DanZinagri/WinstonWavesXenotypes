@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		Which Winston Waves rewards each settings tab drives.
+	-->
+
+	<WinstonWavesXenotypes.JoinRewardListDef>
+		<defName>WWX_JoinRewards</defName>
+
+		<colonistJoinRewards>
+			<li>VSEWW_PoorPawnJoins</li>
+			<li>VSEWW_NormalPawnJoins</li>
+			<li>VSEWW_GoodPawnJoins</li>
+			<li>VSEWW_ExcellentPawnJoins</li>
+			<li>VSEWW_MercenaryJoins</li>
+		</colonistJoinRewards>
+
+		<sanguophageRewards>
+			<li>VSEWW_RandomSanguophage_Excellent</li>
+			<li>VSEWW_RandomSanguophage_Legendary</li>
+		</sanguophageRewards>
+
+		<mutantJoinRewards>
+			<li>VSEWW_GhoulNormal</li>
+			<li>VSEWW_GhoulExcellent</li>
+			<li>VSEWW_ShamblersNormal</li>
+			<li>VSEWW_ShamblersExcellent</li>
+		</mutantJoinRewards>
+
+		<warcasketJoinRewards>
+			<li>VSEWW_Warcasket_Excellent</li>
+			<li>VSEWW_Warcasket_Legendary</li>
+			<li>VSEWW_Warcasket_Legendary_Pyro</li>
+			<li>VSEWW_Warcasket_Legendary_Artillery</li>
+		</warcasketJoinRewards>
+
+	</WinstonWavesXenotypes.JoinRewardListDef>
+
+</Defs>

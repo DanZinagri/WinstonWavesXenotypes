@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Winston's own xenohuman and Alpha Genes join rewards; the plain joins below stand in for both -->
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/VSEWW.RewardDef[starts-with(defName, "VSEWW_RandomXenotypeJoins") or starts-with(defName, "VSEWW_RandomAlphaXenotypeJoins")]</xpath>
+	</Operation>
+
+	<!-- Poor -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_PoorPawnJoins"]/label</xpath>
+		<value>
+			<label>Random colonist joins</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_PoorPawnJoins"]/description</xpath>
+		<value>
+			<description>A single colonist of a random xenotype worth up to 50 combat points joins the colony</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_PoorPawnJoins"]/texPath</xpath>
+		<value>
+			<texPath>UI/Rewards/RewardXenotype_Poor</texPath>
+		</value>
+	</Operation>
+
+	<!-- Normal -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_NormalPawnJoins"]/label</xpath>
+		<value>
+			<label>Random colonist joins</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_NormalPawnJoins"]/description</xpath>
+		<value>
+			<description>A single colonist of a random xenotype worth minimum 50 and up to 125 combat points joins the colony</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_NormalPawnJoins"]/texPath</xpath>
+		<value>
+			<texPath>UI/Rewards/RewardXenotype_Normal</texPath>
+		</value>
+	</Operation>
+
+	<!-- Good -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_GoodPawnJoins"]/label</xpath>
+		<value>
+			<label>Random colonists join</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_GoodPawnJoins"]/description</xpath>
+		<value>
+			<description>A group of 3 colonists of random xenotypes worth a minimum 100 and up to 175 combat points joins the colony</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_GoodPawnJoins"]/texPath</xpath>
+		<value>
+			<texPath>UI/Rewards/RewardXenotype_Good</texPath>
+		</value>
+	</Operation>
+
+	<!-- Excellent -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_ExcellentPawnJoins"]/label</xpath>
+		<value>
+			<label>Random colonists join</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_ExcellentPawnJoins"]/description</xpath>
+		<value>
+			<description>A group of 5 colonists of random xenotypes worth a minimum of 175 combat points joins the colony</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_ExcellentPawnJoins"]/texPath</xpath>
+		<value>
+			<texPath>UI/Rewards/RewardXenotype_Excellent</texPath>
+		</value>
+	</Operation>
+
+	<!-- Legendary -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_MercenaryJoins"]/label</xpath>
+		<value>
+			<label>Random colonists join</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_MercenaryJoins"]/description</xpath>
+		<value>
+			<description>A group of 5 mercenary colonists of random xenotypes join</description>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/VSEWW.RewardDef[defName="VSEWW_MercenaryJoins"]/texPath</xpath>
+		<value>
+			<texPath>UI/Rewards/RewardXenotype_Legendary</texPath>
+		</value>
+	</Operation>
+
+</Patch>

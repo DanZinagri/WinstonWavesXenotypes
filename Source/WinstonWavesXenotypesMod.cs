@@ -81,6 +81,12 @@ namespace WinstonWavesXenotypes
         // which is how Winston Waves had it.
         public bool includeHemogenInColonists = false;
 
+        // On by default: the ghoul, shambler and warcasket rewards hand out humans too, so the
+        // colonist list may as well reach them. Untick to leave them as Winston Waves had them.
+        public bool includeMutantJoins = true;
+
+        public bool includeWarcasketJoins = true;
+
         public List<string> colonistXenotypes = new List<string>();
 
         public bool sanguophageEnabled = true;
@@ -102,6 +108,8 @@ namespace WinstonWavesXenotypes
             base.ExposeData();
             Scribe_Values.Look(ref colonistEnabled, "colonistEnabled", true);
             Scribe_Values.Look(ref includeHemogenInColonists, "includeHemogenInColonists", false);
+            Scribe_Values.Look(ref includeMutantJoins, "includeMutantJoins", true);
+            Scribe_Values.Look(ref includeWarcasketJoins, "includeWarcasketJoins", true);
             Scribe_Collections.Look(ref colonistXenotypes, "colonistXenotypes", LookMode.Value);
             Scribe_Values.Look(ref sanguophageEnabled, "sanguophageEnabled", true);
             Scribe_Collections.Look(ref sanguophageXenotypes, "sanguophageXenotypes", LookMode.Value);
@@ -159,6 +167,18 @@ namespace WinstonWavesXenotypes
                 .Where(XenotypeUtil.CanBeRewardPawn);
         }
 
+        private void InlineCheckbox(Rect rect, string key, ref bool value)
+        {
+            bool before = value;
+            Widgets.DrawHighlightIfMouseover(rect);
+            TooltipHandler.TipRegion(rect, (key + "Tip").Translate().ToString());
+            Widgets.CheckboxLabeled(rect, key.Translate(), ref value);
+            if (value != before)
+            {
+                Changed();
+            }
+        }
+
         private void Changed()
         {
             resolvedColonist = null;
@@ -186,6 +206,14 @@ namespace WinstonWavesXenotypes
                     {
                         Changed();
                     }
+
+                    // Side by side, to spend as little of the header on them as possible.
+                    Rect optionRow = listing.GetRect(24f);
+                    float optionWidth = (optionRow.width - 8f) / 2f;
+                    InlineCheckbox(new Rect(optionRow.x, optionRow.y, optionWidth, optionRow.height),
+                        "WWX.IncludeMutants", ref includeMutantJoins);
+                    InlineCheckbox(new Rect(optionRow.xMax - optionWidth, optionRow.y, optionWidth, optionRow.height),
+                        "WWX.IncludeWarcaskets", ref includeWarcasketJoins);
 
                     listing.Gap(4f);
                     listing.Label("WWX.NonCombatantNote".Translate());

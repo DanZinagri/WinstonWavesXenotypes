@@ -17,5 +17,13 @@ namespace WinstonWavesXenotypes
 
         // Rewards meant to hand out hemogen drinkers - driven by the Sanguophage xenotypes tab.
         public List<string> sanguophageRewards = new List<string>();
+
+        // Ghoul and shambler joins. Humans underneath - mutating a pawn only disables a couple of
+        // named genes, so its xenotype survives - but they are their own thing, so the Colonist
+        // tab has a toggle for whether its list reaches them.
+        public List<string> mutantJoinRewards = new List<string>();
+
+        // Warcasket joins, same deal: humans in a tin can, toggled from the Colonist tab.
+        public List<string> warcasketJoinRewards = new List<string>();
     }
 }

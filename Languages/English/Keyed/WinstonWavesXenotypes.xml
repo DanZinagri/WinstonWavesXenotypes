@@ -9,6 +9,10 @@
 	<WWX.ColonistEnableTip>The "Random colonist joins" rewards are hardcoded to baseliners. With this on they roll from the list below instead. Turn it off to leave Winston Waves' reward pawns alone.</WWX.ColonistEnableTip>
 	<WWX.IncludeHemogen>Include hemogen xenotypes</WWX.IncludeHemogen>
 	<WWX.IncludeHemogenTip>Off by default, so sanguophages and anything else that runs on hemogen stay exclusive to the sanguophage reward - the way Winston Waves had it. Turn this on to let them turn up as ordinary colonists too.</WWX.IncludeHemogenTip>
+	<WWX.IncludeMutants>Include ghouls and shamblers</WWX.IncludeMutants>
+	<WWX.IncludeMutantsTip>Winston Waves' ghoul and shambler rewards are humans underneath, forced to baseliner like the rest. Mutating a pawn only disables a couple of named genes, so a pigskin ghoul still looks like a pigskin. On by default.</WWX.IncludeMutantsTip>
+	<WWX.IncludeWarcaskets>Include warcaskets</WWX.IncludeWarcaskets>
+	<WWX.IncludeWarcasketsTip>The VFE Pirates warcasket rewards are humans in a tin can, also forced to baseliner. You will only see the difference when they come out of the casket. On by default.</WWX.IncludeWarcasketsTip>
 	<WWX.NoneSelectedColonists>Nothing selected - join rewards will keep giving baseliners.</WWX.NoneSelectedColonists>
 	<WWX.NonCombatantNote>Xenotypes that cannot be generated as combatants, such as highmates, are not listed - Winston Waves only hands out pawns capable of violence.</WWX.NonCombatantNote>
 

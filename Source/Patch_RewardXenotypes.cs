@@ -54,6 +54,20 @@ namespace WinstonWavesXenotypes
             {
                 xenotypes = settings.sanguophageEnabled ? settings.ResolvedSanguophageXenotypes : null;
             }
+            else if (JoinRewards.IsMutantJoinReward(reward))
+            {
+                // Ghouls and shamblers draw on the colonist list, so they answer to the colonist
+                // master toggle as well as their own.
+                xenotypes = settings.colonistEnabled && settings.includeMutantJoins
+                    ? settings.ResolvedColonistXenotypes
+                    : null;
+            }
+            else if (JoinRewards.IsWarcasketJoinReward(reward))
+            {
+                xenotypes = settings.colonistEnabled && settings.includeWarcasketJoins
+                    ? settings.ResolvedColonistXenotypes
+                    : null;
+            }
             else
             {
                 return;

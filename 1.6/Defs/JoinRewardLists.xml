@@ -21,6 +21,20 @@
 			<li>VSEWW_RandomSanguophage_Legendary</li>
 		</sanguophageRewards>
 
+		<mutantJoinRewards>
+			<li>VSEWW_GhoulNormal</li>
+			<li>VSEWW_GhoulExcellent</li>
+			<li>VSEWW_ShamblersNormal</li>
+			<li>VSEWW_ShamblersExcellent</li>
+		</mutantJoinRewards>
+
+		<warcasketJoinRewards>
+			<li>VSEWW_Warcasket_Excellent</li>
+			<li>VSEWW_Warcasket_Legendary</li>
+			<li>VSEWW_Warcasket_Legendary_Pyro</li>
+			<li>VSEWW_Warcasket_Legendary_Artillery</li>
+		</warcasketJoinRewards>
+
 	</WinstonWavesXenotypes.JoinRewardListDef>
 
 </Defs>

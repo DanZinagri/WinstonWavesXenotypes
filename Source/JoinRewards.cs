@@ -16,6 +16,10 @@ namespace WinstonWavesXenotypes
 
         private static readonly List<RewardDef> sanguophageJoins = new List<RewardDef>();
 
+        private static readonly List<RewardDef> mutantJoins = new List<RewardDef>();
+
+        private static readonly List<RewardDef> warcasketJoins = new List<RewardDef>();
+
         public static bool IsColonistJoinReward(RewardDef reward)
         {
             EnsureResolved();
@@ -26,6 +30,18 @@ namespace WinstonWavesXenotypes
         {
             EnsureResolved();
             return sanguophageJoins.Contains(reward);
+        }
+
+        public static bool IsMutantJoinReward(RewardDef reward)
+        {
+            EnsureResolved();
+            return mutantJoins.Contains(reward);
+        }
+
+        public static bool IsWarcasketJoinReward(RewardDef reward)
+        {
+            EnsureResolved();
+            return warcasketJoins.Contains(reward);
         }
 
         private static void EnsureResolved()
@@ -48,13 +64,16 @@ namespace WinstonWavesXenotypes
             {
                 Collect(list.colonistJoinRewards, colonistJoins, missing);
                 Collect(list.sanguophageRewards, sanguophageJoins, missing);
+                Collect(list.mutantJoinRewards, mutantJoins, missing);
+                Collect(list.warcasketJoinRewards, warcasketJoins, missing);
             }
 
-            // Usually a mod the player does not have, but just as easily a typo in the XML, so
-            // it is worth saying which names went nowhere.
+            // The lists name rewards from optional mods (Anomaly ghouls, VFE Pirates warcaskets),
+            // so a name going nowhere is expected rather than wrong - a message, not a warning.
+            // It is still the thing to read if an edit to JoinRewardLists.xml seems to do nothing.
             if (missing.Count > 0)
             {
-                Log.Warning("[WinstonWavesXenotypes] These reward defNames were not found and are being skipped: " + string.Join(", ", missing));
+                Log.Message("[WinstonWavesXenotypes] Reward defNames not present in this modlist, skipped: " + string.Join(", ", missing));
             }
         }
 

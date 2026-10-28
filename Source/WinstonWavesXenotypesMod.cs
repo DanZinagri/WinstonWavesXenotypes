@@ -1,3 +1,4 @@
+using System.Reflection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,9 @@ namespace WinstonWavesXenotypes
             Harmony harmony = new Harmony("DanZinagri.WinstonWavesXenotypes");
             Patch_RewardXenotypes.Apply(harmony);
             Patch_WinstonSettingsTab.Apply(harmony);
-            harmony.PatchAll();
+            // The assembly is passed explicitly: on .NET 10 (1.7) the parameterless PatchAll() reads the calling
+            // assembly off the stack, which breaks when the JIT inlines the call (Harmony issue #395).
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         // While the settings tabs are living inside the Winston Waves menu there is no reason to

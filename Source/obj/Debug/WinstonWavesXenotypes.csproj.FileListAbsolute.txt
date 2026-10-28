@@ -1,5 +1,0 @@
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\WinstonWavesXenotypes\1.6\Assemblies\WinstonWavesXenotypes.dll
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\WinstonWavesXenotypes\Source\obj\Debug\WinstonWavesXenotypes.csproj.AssemblyReference.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\WinstonWavesXenotypes\Source\obj\Debug\WinstonWavesXenotypes.GeneratedMSBuildEditorConfig.editorconfig
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\WinstonWavesXenotypes\Source\obj\Debug\WinstonWavesXenotypes.csproj.CoreCompileInputs.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\WinstonWavesXenotypes\Source\obj\Debug\WinstonWavesXenotypes.dll
